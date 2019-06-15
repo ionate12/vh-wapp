@@ -1,1 +1,25 @@
 /* You can add global styles to this file, and also import other style files */
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+@import "~bootstrap/dist/css/bootstrap.min.css";
+@import "~font-awesome/css/font-awesome.min.css";
+/*
+@import "./Themes/remark/classic/base/assets/css/site.min.css";
+@import "./Themes/remark/classic/global/css/bootstrap-extend.min.css";
+@import "./Themes/remark/classic/global/vendor/animsition/animsition.css";
+@import "./Themes/remark/classic/global/vendor/asscrollable/asScrollable.css";
+@import "./Themes/remark/classic/global/vendor/switchery/switchery.css";
+@import "./Themes/remark/classic/global/vendor/intro-js/introjs.css";
+@import "./Themes/remark/classic/global/vendor/slidepanel/slidePanel.css";
+@import "./Themes/remark/classic/global/vendor/flag-icon-css/flag-icon.css";
+@import "./Themes/remark/classic/base/assets/examples/css/pages/login-v2.css";
+@import "./Themes/remark/classic/global/fonts/web-icons/web-icons.min.css";
+@import "./Themes/remark/classic/global/fonts/brand-icons/brand-icons.min.css";
+*/
+html, body { height: 100%; }
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+
+div.card {
+  margin-top: 10px;
+}
