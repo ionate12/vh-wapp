@@ -18,8 +18,12 @@
 */
 html, body { height: 100%; }
 
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; font-size: 13px}
 
 div.card {
   margin-top: 10px;
+}
+mat-divider {
+  margin-left: 10px;
+  margin-right: 10px;
 }

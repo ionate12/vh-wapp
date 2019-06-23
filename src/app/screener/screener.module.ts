@@ -3,13 +3,15 @@ import { CommonModule } from '@angular/common';
 import {RouterModule} from '@angular/router';
 import {AddScreenerComponent} from './add-screener.component';
 import {ScreenerComponent} from './screener.component';
-import {MatButtonModule, MatFormFieldModule, MatStepperModule} from '@angular/material';
+import {MatButtonModule, MatCardModule, MatFormFieldModule, MatListModule, MatStepperModule, MatTableModule} from '@angular/material';
 import {ReactiveFormsModule} from '@angular/forms';
+import { ProfileTableComponent } from './profile-table/profile-table.component';
 
 @NgModule({
   declarations: [
     ScreenerComponent,
-    AddScreenerComponent
+    AddScreenerComponent,
+    ProfileTableComponent
   ],
   imports: [
     CommonModule,
@@ -20,9 +22,14 @@ import {ReactiveFormsModule} from '@angular/forms';
     ]),
     MatStepperModule,
     MatFormFieldModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
+    MatListModule,
+    MatCardModule,
+    MatTableModule
   ], exports: [
     RouterModule, CommonModule
   ]
 })
-export class ScreenerModule { }
+export class ScreenerModule {
+
+}

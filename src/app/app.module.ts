@@ -13,7 +13,7 @@ import {
   MatButtonModule,
   MatSidenavModule,
   MatListModule,
-  MatAutocompleteModule
+  MatAutocompleteModule, MatGridListModule
 } from '@angular/material';
 import {NgbModule} from '@ng-bootstrap/ng-bootstrap';
 import { SampleTableComponent } from './sample-table/sample-table.component';
@@ -44,9 +44,10 @@ import {RouterModule} from '@angular/router';
     MatSidenavModule,
     MatListModule,
     MatAutocompleteModule,
-    RouterModule.forRoot([{ path: 'main', component: SampleTableComponent},
-      { path: '', redirectTo: 'main', pathMatch: 'full' },
-      { path: '**', redirectTo: 'main', pathMatch: 'full' }])
+    RouterModule.forRoot([{path: 'main', component: SampleTableComponent},
+      {path: '', redirectTo: 'main', pathMatch: 'full'},
+      {path: '**', redirectTo: 'main', pathMatch: 'full'}]),
+    MatGridListModule
   ],
   providers: [],
   bootstrap: [AppComponent]
