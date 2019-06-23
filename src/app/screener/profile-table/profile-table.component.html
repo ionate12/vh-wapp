@@ -1,4 +1,14 @@
-<div class="container" style="margin: 50px">
+<div class="container" style="margin: 30px">
+<!--  Profile Description -->
+  <mat-card>
+    <mat-card-header>
+      <div mat-card-avatar class="example-header-image"></div>
+      <mat-card-title>{{currentUseProfile.name}}</mat-card-title>
+      <mat-card-subtitle>{{currentUseProfile.description}}</mat-card-subtitle>
+    </mat-card-header>
+  </mat-card>
+
+
   <!--<table mat-table [dataSource]="localData" class="mat-elevation-z1" >
     <ng-container matColumnDef="position">
       <th mat-header-cell *matHeaderCellDef> No. </th>

@@ -21,6 +21,8 @@ import { NavComponent } from './nav/nav.component';
 import { LayoutModule } from '@angular/cdk/layout';
 import {ScreenerModule} from './screener/screener.module';
 import {RouterModule} from '@angular/router';
+import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
+import {MainInterceptor} from './services/interceptors/main.interceptor';
 
 
 @NgModule({
@@ -32,7 +34,8 @@ import {RouterModule} from '@angular/router';
   imports: [
     NgbModule,
     BrowserModule,
-    //AppRoutingModule,
+    HttpClientModule,
+    // AppRoutingModule,
     ScreenerModule,
     BrowserAnimationsModule,
     MatTableModule,
@@ -49,7 +52,13 @@ import {RouterModule} from '@angular/router';
       {path: '**', redirectTo: 'main', pathMatch: 'full'}]),
     MatGridListModule
   ],
-  providers: [],
+  providers: [
+    /*{
+      provide: HTTP_INTERCEPTORS,
+      useClass: MainInterceptor,
+      multi: true
+    }*/
+  ],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

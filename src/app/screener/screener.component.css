@@ -20,3 +20,7 @@ mat-divider {
   margin-left: 10px;
   margin-right: 10px;
 }
+.active-list-item {
+  background: #3F51B5;
+  color: white;
+}

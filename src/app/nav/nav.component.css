@@ -25,3 +25,11 @@
   flex: 1 1 auto;
   height: 100%;
 }
+.active-list-item {
+  background: #3F51B5;
+  color: whitesmoke;
+}
+.active-list-item:hover {
+  background: #3F51B5;
+  color: whitesmoke;
+}

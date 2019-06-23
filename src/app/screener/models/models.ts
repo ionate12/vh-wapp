@@ -1,7 +1,7 @@
 export interface ScreenerProfile {
   name: string;
   description: string;
-  _id: string;
+  screenerId: string;
   items: ScreenerDetail [];
 }
 
