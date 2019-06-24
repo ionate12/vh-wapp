@@ -23,6 +23,9 @@ import {ScreenerModule} from './screener/screener.module';
 import {RouterModule} from '@angular/router';
 import {HTTP_INTERCEPTORS, HttpClientModule} from '@angular/common/http';
 import {MainInterceptor} from './services/interceptors/main.interceptor';
+import { TwoWaySliderComponent } from './shared/sliders/two-way-slider/two-way-slider.component';
+import {IgxSliderModule} from 'igniteui-angular';
+import {FormsModule} from '@angular/forms';
 
 
 @NgModule({
@@ -49,8 +52,7 @@ import {MainInterceptor} from './services/interceptors/main.interceptor';
     MatAutocompleteModule,
     RouterModule.forRoot([{path: 'main', component: SampleTableComponent},
       {path: '', redirectTo: 'main', pathMatch: 'full'},
-      {path: '**', redirectTo: 'main', pathMatch: 'full'}]),
-    MatGridListModule
+      {path: '**', redirectTo: 'main', pathMatch: 'full'}])
   ],
   providers: [
     /*{
@@ -58,6 +60,8 @@ import {MainInterceptor} from './services/interceptors/main.interceptor';
       useClass: MainInterceptor,
       multi: true
     }*/
+  ],
+  exports: [
   ],
   bootstrap: [AppComponent]
 })

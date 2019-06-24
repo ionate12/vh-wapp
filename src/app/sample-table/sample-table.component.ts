@@ -23,7 +23,7 @@ const ELEMENT_DATA: PeriodicElement[] = [
 @Component({
   selector: 'app-sample-table',
   templateUrl: './sample-table.component.html',
-  styleUrls: ['./sample-table.component.css']
+  styleUrls: ['./sample-table.component.scss']
 })
 export class SampleTableComponent implements OnInit {
   displayedColumns: string[] = ['position', 'name', 'weight', 'symbol'];

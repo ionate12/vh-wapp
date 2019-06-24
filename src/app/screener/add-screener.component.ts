@@ -4,7 +4,7 @@ import {FormBuilder, FormGroup, Validators} from '@angular/forms';
 @Component({
   selector: 'app-add-screener',
   templateUrl: './add-screener.component.html',
-  styleUrls: ['./add-screener.component.css']
+  styleUrls: ['./add-screener.component.scss']
 })
 export class AddScreenerComponent implements OnInit {
 

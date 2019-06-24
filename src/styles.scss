@@ -1,8 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
 
-@import "~@angular/material/prebuilt-themes/indigo-pink.css";
-@import "~bootstrap/dist/css/bootstrap.min.css";
-@import "~font-awesome/css/font-awesome.min.css";
+//@import "~@angular/material/prebuilt-themes/indigo-pink";
+@import "~bootstrap/dist/css/bootstrap.min";
+@import "~font-awesome/css/font-awesome.min";
+@import '~igniteui-angular/lib/core/styles/themes/_index';
+@include igx-core();
+@include igx-theme($default-palette);
 /*
 @import "./Themes/remark/classic/base/assets/css/site.min.css";
 @import "./Themes/remark/classic/global/css/bootstrap-extend.min.css";

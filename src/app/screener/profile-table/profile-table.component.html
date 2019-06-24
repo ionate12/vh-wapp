@@ -1,12 +1,17 @@
-<div class="container" style="margin: 30px">
-<!--  Profile Description -->
-  <mat-card>
+<div *ngIf="currentUseProfile">
+  <mat-card style="margin: 30px">
     <mat-card-header>
       <div mat-card-avatar class="example-header-image"></div>
       <mat-card-title>{{currentUseProfile.name}}</mat-card-title>
       <mat-card-subtitle>{{currentUseProfile.description}}</mat-card-subtitle>
     </mat-card-header>
+    <mat-card-content>
+      <app-two-way-slider></app-two-way-slider>
+    </mat-card-content>
   </mat-card>
+</div>
+<!--  Profile Description -->
+
 
 
   <!--<table mat-table [dataSource]="localData" class="mat-elevation-z1" >
@@ -29,4 +34,4 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>-->
-</div>
+

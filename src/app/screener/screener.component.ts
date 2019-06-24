@@ -8,7 +8,7 @@ import {ResponseEnv} from '../services/models/service.model';
 @Component({
   selector: 'app-screener',
   templateUrl: './screener.component.html',
-  styleUrls: ['./screener.component.css']
+  styleUrls: ['./screener.component.scss']
 })
 export class ScreenerComponent implements OnInit {
   activeProfile: ScreenerProfile;

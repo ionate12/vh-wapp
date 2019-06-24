@@ -6,6 +6,9 @@ import {ScreenerComponent} from './screener.component';
 import {MatButtonModule, MatCardModule, MatFormFieldModule, MatListModule, MatStepperModule, MatTableModule} from '@angular/material';
 import {ReactiveFormsModule} from '@angular/forms';
 import { ProfileTableComponent } from './profile-table/profile-table.component';
+import {AppModule} from '../app.module';
+import {TwoWaySliderComponent} from '../shared/sliders/two-way-slider/two-way-slider.component';
+import {SharedModule} from '../shared/shared.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,8 @@ import { ProfileTableComponent } from './profile-table/profile-table.component';
     ReactiveFormsModule,
     MatListModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    SharedModule
   ], exports: [
     RouterModule, CommonModule
   ]
